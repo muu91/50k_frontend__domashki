@@ -39,7 +39,6 @@
             <div class="header_top__left">
                 <ul>
                     <li>
-
                         <a href="#"><i class="fas fa-bullhorn"></i>Sms Default welcome !</a>
                     </li>
                     <li>
@@ -70,15 +69,12 @@
     <div class="header_center">
         <div class="container">
             <div class="header_center__content">
-
+                <div class="header_logo">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="logo ">
+                    </a>
+                </div>
                 <ul>
-                    <li>
-                        <div class="header_logo">
-                            <a href="#">
-                                <img src="./img/logo.png" alt="logo ">
-                            </a>
-                        </div>
-                    </li>
                     <li>
                         <div class="header_center__item">
                             <a class="item__img">
@@ -151,18 +147,18 @@
                                     <ul>
                                         <li>
                                             <a href="#">
-                                                    Home page 1
-                                                </a>
+                                                Home page 1
+                                            </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                    Home page 2
-                                                </a>
+                                                Home page 2
+                                            </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                    Home page 3
-                                                </a>
+                                                Home page 3
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -170,7 +166,7 @@
                         </li>
                         <li>
                             <a href="#" class="arrow_submenu">
-                                Products 
+                                Products
                             </a>
                             <div class="header__submenu">
                                 <div class="submenu__content submenu__content2">
@@ -281,7 +277,7 @@
                         </li>
                         <li>
                             <a href="#" class="arrow_submenu">
-                                Sale 
+                                Sale
                             </a>
                         </li>
                         <li>
@@ -340,6 +336,11 @@
                     </ul>
                 </div>
                 <div class="header_bottom__right">
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="header_bottom__search">
                         <form action="#">
                             <input type="text" placeholder="Search...">
@@ -349,7 +350,7 @@
                         </form>
                     </div>
                     <div class="header_bottom__basket">
-                        <div class="basket__img">
+                        <div class="basket__img" id="basket">
                             <i class="fas fa-shopping-bag"></i>
                         </div>
                         <div class="basket__text">
@@ -361,12 +362,99 @@
                                 <span>/ $150.00</span>
                             </p>
                         </div>
+                        <div class="basket__dropmenu">
+                            <div class="dropmenu__elements">
+                                <ul>
+                                    <li>
+                                        <div class="element__img">
+                                            <img src="./img/featured1.jpg" alt="featured">
+                                        </div>
+                                        <div class="element__text">
+                                            <h4>
+                                                Crepe Jacket With Pompom
+                                            </h4>
+                                            <div>
+                                                <p>
+                                                    $<span>36.00</span>
+                                                </p>
+                                                <p>
+                                                    <del>
+                                                        $42.00
+                                                    </del>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="element__remove">
+                                            <i class="far fa-trash-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="element__img">
+                                            <img src="./img/featured1.jpg" alt="featured">
+                                        </div>
+                                        <div class="element__text">
+                                            <h4>
+                                                Crepe Jacket With Pompom
+                                            </h4>
+                                            <div>
+                                                <p>
+                                                    $<span>36.00</span>
+                                                </p>
+                                                <p>
+                                                    <del>
+                                                        $42.00
+                                                    </del>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="element__remove">
+                                            <i class="far fa-trash-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="element__img">
+                                            <img src="./img/featured1.jpg" alt="featured">
+                                        </div>
+                                        <div class="element__text">
+                                            <h4>
+                                                Crepe Jacket With Pompom
+                                            </h4>
+                                            <div>
+                                                <p>
+                                                    $<span>36.00</span>
+                                                </p>
+                                                <p>
+                                                    <del>
+                                                        $42.00
+                                                    </del>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="element__remove">
+                                            <i class="far fa-trash-alt"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropmenu__bottom">
+                                <div class="dropmenu__bottom__text">
+                                    <p>
+                                        Total
+                                    </p>
+                                    <p>
+                                        $
+                                        <span>
+                                            689.8
+                                        </span>
+                                    </p>
+                                </div>
+                                <a href="#" class="dropmenu__bottom__btn">check out</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </div>
     <!-- End Bottom Header -->
     <!-- -------------------- -->
@@ -901,6 +989,8 @@
 <script src="libs/jquery-1.11.3.min.js"></script>
 <script src="libs/slick.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/main.js"></script>
+
 <!-- End JS Script -->
 <!-- ======================================== -->
     </div>
