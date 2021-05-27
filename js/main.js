@@ -90,38 +90,49 @@ btnBasket[2].addEventListener("click", function (event) {
 // -------------------
 // 1) Возводим в степень числа вводимые пользователем
 
-function powerNum(number) {
-  return Math.pow(number, 2);
-}
-let numberPow = 20;
-let powerResult = powerNum(numberPow);
+// function powerNum(number) {
+//   return Math.pow(number, 2);
+// }
+// let numberPow = 20;
+// let powerResult = powerNum(numberPow);
 
-console.log('Результат возведения в степени числа ' + numberPow + ' равна: ' + powerResult);
+// console.log('Результат возведения в степени числа ' + numberPow + ' равна: ' + powerResult);
 
-// -------------------
-// 2) Находим площадь круга, радиус который вводит пользователь
+// // -------------------
+// // 2) Находим площадь круга, радиус который вводит пользователь
 
-function areaCircle(radius) {
-  return Math.pow(radius, 2) * Math.PI;
-}
-let areaCircleUser = 5;
-let areaCircleRes = areaCircle(areaCircleUser);
-console.log('Площадь круга c радиусом ' + areaCircleUser + ' равна: ' + areaCircleRes);
+// function areaCircle(radius) {
+//   return Math.pow(radius, 2) * Math.PI;
+// }
+// let areaCircleUser = 5;
+// let areaCircleRes = areaCircle(areaCircleUser);
+// console.log('Площадь круга c радиусом ' + areaCircleUser + ' равна: ' + areaCircleRes);
 
-// -------------------
-// 3) Находим площадь прямоугольника
+// // -------------------
+// // 3) Находим площадь прямоугольника
 
-function areaRectangle(lengthRectangle, widthRectangle) {
-  return lengthRectangle * widthRectangle;
-}
-let areaRectangleLength = 8;
-let areaRectangWidth = 6;
+// function areaRectangle(lengthRectangle, widthRectangle) {
+//   return lengthRectangle * widthRectangle;
+// }
+// let areaRectangleLength = 8;
+// let areaRectangWidth = 6;
 
-let areaRectangleResult = areaCircle(areaRectangleLength, areaRectangWidth);
-console.log('Площадь прямоугольника с длиной ' + areaRectangleLength + ' и шириной ' + areaRectangWidth + ' равна: ' + areaRectangleResult);
+// let areaRectangleResult = areaCircle(areaRectangleLength, areaRectangWidth);
+// console.log('Площадь прямоугольника с длиной ' + areaRectangleLength + ' и шириной ' + areaRectangWidth + ' равна: ' + areaRectangleResult);
 
 // ========================================
 
+// Домашка №32
+
+function sum(a, b) {
+  return a + b;
+}
+console.log(sum(1.2, 1.2).toFixed(2));
+console.log(sum(2.5, 2.3).toFixed(5));
+console.log(sum(2.5, 2.7).toFixed(5));
+console.log(sum(2.5, 3.2).toFixed(6));
+
+// ========================================
 
 
 
