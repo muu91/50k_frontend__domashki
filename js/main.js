@@ -26,7 +26,7 @@ var featDel = document.querySelectorAll('.f__item__prices > del');
 // ========================================
 
 var btnBasket = document.querySelectorAll('.f__item__links > .btn__basket');
-console.log(btnBasket);
+// console.log(btnBasket);
 
 // По клику получаем название товара
 btnBasket[0].addEventListener("click", function (event) {
@@ -57,6 +57,32 @@ btnBasket[2].addEventListener("click", function (event) {
   }
 
 });
+
+// ========================================
+
+// Домашка №30
+// -------------------
+// Вичисляем длину окружности, когда вводим радиус окружности
+
+function lengthCircle(radius) {
+  return 2 * Math.PI * radius;
+}
+var lengthCircleResults = lengthCircle(20);
+console.log('Длина окружности равна: ' + lengthCircleResults);
+
+// -------------------
+// Функцию  которая возвращает меньшее из чисел a и b
+
+function min(a, b) {
+  if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+var lesserNumber = min(5, 10);
+
+console.log('Меньшее число: ' + lesserNumber);
 
 // ========================================
 
