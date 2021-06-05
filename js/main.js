@@ -1,19 +1,19 @@
 
 // ========================================
 // Корзина
-var basket = document.querySelector('#basket');
-var basketDropmenu = document.querySelector('.basket__dropmenu');
-// console.log(basketDropmenu);
-basket.onclick = function () {
-  basketDropmenu.classList.toggle("active");
-}
-// ========================================
-// Получение данных о товаре: картинку, заголвок, цены
-var featImg = document.querySelectorAll('.f__item__img > img');
-var featH4 = document.querySelectorAll('.featured__item > h4');
-var featPrice = document.querySelectorAll('.f__item__prices > span');
-var featDel = document.querySelectorAll('.f__item__prices > del');
-// console.log(featImg.src);
+// var basket = document.querySelector('#basket');
+// var basketDropmenu = document.querySelector('.basket__dropmenu');
+// // console.log(basketDropmenu);
+// basket.onclick = function () {
+//   basketDropmenu.classList.toggle("active");
+// }
+// // ========================================
+// // Получение данных о товаре: картинку, заголвок, цены
+// var featImg = document.querySelectorAll('.f__item__img > img');
+// var featH4 = document.querySelectorAll('.featured__item > h4');
+// var featPrice = document.querySelectorAll('.f__item__prices > span');
+// var featDel = document.querySelectorAll('.f__item__prices > del');
+// // console.log(featImg.src);
 
 // ========================================
 // Перебор товаров
@@ -25,38 +25,38 @@ var featDel = document.querySelectorAll('.f__item__prices > del');
 
 // ========================================
 
-var btnBasket = document.querySelectorAll('.f__item__links > .btn__basket');
-// console.log(btnBasket);
+// var btnBasket = document.querySelectorAll('.f__item__links > .btn__basket');
+// // console.log(btnBasket);
 
-// По клику получаем название товара
-btnBasket[0].addEventListener("click", function (event) {
-  event.preventDefault();
-  var featH4Length = featH4.length;
-  for (var i = 0; i < featH4Length; i++) {
-    console.log(featH4[i].innerText);
-  }
-});
-// По клику получаем цену товара
+// // По клику получаем название товара
+// btnBasket[0].addEventListener("click", function (event) {
+//   event.preventDefault();
+//   var featH4Length = featH4.length;
+//   for (var i = 0; i < featH4Length; i++) {
+//     console.log(featH4[i].innerText);
+//   }
+// });
+// // По клику получаем цену товара
 
-btnBasket[1].addEventListener("click", function (event) {
-  event.preventDefault();
-  var featPriceLength = featPrice.length;
-  for (var i = 0; i < featPriceLength; i++) {
-    console.log(featPrice[i].innerText);
-  }
+// btnBasket[1].addEventListener("click", function (event) {
+//   event.preventDefault();
+//   var featPriceLength = featPrice.length;
+//   for (var i = 0; i < featPriceLength; i++) {
+//     console.log(featPrice[i].innerText);
+//   }
 
-});
+// });
 
-// По клику получаем адрес ссылки изображения
+// // По клику получаем адрес ссылки изображения
 
-btnBasket[2].addEventListener("click", function (event) {
-  event.preventDefault();
-  var featImgLength = featImg.length;
-  for (var i = 0; i < featImgLength; i++) {
-    console.log(featImg[i].src);
-  }
+// btnBasket[2].addEventListener("click", function (event) {
+//   event.preventDefault();
+//   var featImgLength = featImg.length;
+//   for (var i = 0; i < featImgLength; i++) {
+//     console.log(featImg[i].src);
+//   }
 
-});
+// });
 
 // ========================================
 
@@ -124,15 +124,81 @@ btnBasket[2].addEventListener("click", function (event) {
 
 // Домашка №32
 
-function sum(a, b) {
-  return a + b;
-}
-console.log(sum(1.2, 1.2).toFixed(2));
-console.log(sum(2.5, 2.3).toFixed(5));
-console.log(sum(2.5, 2.7).toFixed(5));
-console.log(sum(2.5, 3.2).toFixed(6));
+// function sum(a, b) {
+//   return a + b;
+// }
+// console.log(sum(1.2, 1.2).toFixed(2));
+// console.log(sum(2.5, 2.3).toFixed(5));
+// console.log(sum(2.5, 2.7).toFixed(5));
+// console.log(sum(2.5, 3.2).toFixed(6));
 
 // ========================================
+
+// Домашка №33
+//Фунция которая запрашивает ввести логин и парол
+
+var btnBasket = document.querySelectorAll('.f__item__links > .btn__basket');
+// console.log(btnBasket);
+
+let myFunction = function (e) {
+  let login = prompt('Пожалуйста, введите ваш логин: ')
+  e.preventDefault();
+  if (login === 'Ulanbek') {
+    for (let i = 2; i >= 0; i--) {
+      let password = prompt('Введите ваш пароль: ')
+      if (password !== '54321') {
+        alert('У вас осталось ' + i + ' попыток');
+      } else {
+        alert('Добро пожаловать, ' + login)
+        break
+      }
+      if (i === 0) {
+        alert('Извините, вы 3 раза ввели неправильный пароль. Тебе не место тута.');
+        break
+      }
+    }
+  } else {
+    alert('Вы неправильно ввели Логин! Перезагрузите страницу, чтобы ввести повторно...')
+  }
+}
+
+for (let i = 0; i < btnBasket.length; i++) {
+  btnBasket[i].addEventListener('click', myFunction, false);
+}
+// ========================================
+// Домашка №33 (2)
+
+document.body.onload = addElement;
+var my_div = newDiv = null;
+
+function addElement() {
+
+  // Создаём новый элемент div
+  // и добавляем в него немного контента
+  let tagName = prompt('Какой тег создать? ');
+  var newDiv = document.createElement(tagName);
+  let textName = prompt('Какой текст хотите вставить? ');
+  newDiv.innerHTML = textName;
+
+  // Добавляем только что созданный элемент в дерево DOM
+
+  my_div = document.getElementById("org_div1");
+  let newTag = document.body.insertBefore(newDiv, my_div);
+
+  let textColor = prompt('Какой цвет текст хотите вставить? ');
+  newTag.style.color = textColor;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
