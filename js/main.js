@@ -137,58 +137,80 @@
 // Домашка №33
 //Фунция которая запрашивает ввести логин и парол
 
-var btnBasket = document.querySelectorAll('.f__item__links > .btn__basket');
-// console.log(btnBasket);
+// var btnBasket = document.querySelectorAll('.f__item__links > .btn__basket');
+// // console.log(btnBasket);
 
-let myFunction = function (e) {
-  let login = prompt('Пожалуйста, введите ваш логин: ')
-  e.preventDefault();
-  if (login === 'Ulanbek') {
-    for (let i = 2; i >= 0; i--) {
-      let password = prompt('Введите ваш пароль: ')
-      if (password !== '54321') {
-        alert('У вас осталось ' + i + ' попыток');
-      } else {
-        alert('Добро пожаловать, ' + login)
-        break
-      }
-      if (i === 0) {
-        alert('Извините, вы 3 раза ввели неправильный пароль. Тебе не место тута.');
-        break
-      }
-    }
-  } else {
-    alert('Вы неправильно ввели Логин! Перезагрузите страницу, чтобы ввести повторно...')
-  }
+// let myFunction = function (e) {
+//   let login = prompt('Пожалуйста, введите ваш логин: ')
+//   e.preventDefault();
+//   if (login === 'Ulanbek') {
+//     for (let i = 2; i >= 0; i--) {
+//       let password = prompt('Введите ваш пароль: ')
+//       if (password !== '54321') {
+//         alert('У вас осталось ' + i + ' попыток');
+//       } else {
+//         alert('Добро пожаловать, ' + login)
+//         break
+//       }
+//       if (i === 0) {
+//         alert('Извините, вы 3 раза ввели неправильный пароль. Тебе не место тута.');
+//         break
+//       }
+//     }
+//   } else {
+//     alert('Вы неправильно ввели Логин! Перезагрузите страницу, чтобы ввести повторно...')
+//   }
+// }
+
+// for (let i = 0; i < btnBasket.length; i++) {
+//   btnBasket[i].addEventListener('click', myFunction, false);
+// }
+// // ========================================
+// // Домашка №33 (2)
+
+// document.body.onload = addElement;
+// var my_div = newDiv = null;
+
+// function addElement() {
+
+//   // Создаём новый элемент div
+//   // и добавляем в него немного контента
+//   let tagName = prompt('Какой тег создать? ');
+//   var newDiv = document.createElement(tagName);
+//   let textName = prompt('Какой текст хотите вставить? ');
+//   newDiv.innerHTML = textName;
+
+//   // Добавляем только что созданный элемент в дерево DOM
+
+//   my_div = document.getElementById("org_div1");
+//   let newTag = document.body.insertBefore(newDiv, my_div);
+
+//   let textColor = prompt('Какой цвет текст хотите вставить? ');
+//   newTag.style.color = textColor;
+
+// }
+// ========================================
+
+// Домашка №34(1)
+
+let psevdoArray = { 0: 'first', 1: 'second', 2: 'third', length: 3 };
+let array1 = [];
+
+for (let i = 0; i < psevdoArray.length; i++) {
+  array1.push(psevdoArray[i])
 }
+console.log(array1);
 
-for (let i = 0; i < btnBasket.length; i++) {
-  btnBasket[i].addEventListener('click', myFunction, false);
+// Домашка №34(2)
+
+let array2 = ["first", "second", "third"];
+
+for (let i = 0; i < array2.length; i++) {
+  console.log(Array.from(array2[i]));
 }
 // ========================================
-// Домашка №33 (2)
 
-document.body.onload = addElement;
-var my_div = newDiv = null;
 
-function addElement() {
-
-  // Создаём новый элемент div
-  // и добавляем в него немного контента
-  let tagName = prompt('Какой тег создать? ');
-  var newDiv = document.createElement(tagName);
-  let textName = prompt('Какой текст хотите вставить? ');
-  newDiv.innerHTML = textName;
-
-  // Добавляем только что созданный элемент в дерево DOM
-
-  my_div = document.getElementById("org_div1");
-  let newTag = document.body.insertBefore(newDiv, my_div);
-
-  let textColor = prompt('Какой цвет текст хотите вставить? ');
-  newTag.style.color = textColor;
-
-}
 
 
 
