@@ -193,22 +193,106 @@
 
 // Домашка №34(1)
 
-let psevdoArray = { 0: 'first', 1: 'second', 2: 'third', length: 3 };
-let array1 = [];
+// let psevdoArray = { 0: 'first', 1: 'second', 2: 'third', length: 3 };
+// let array1 = [];
 
-for (let i = 0; i < psevdoArray.length; i++) {
-  array1.push(psevdoArray[i])
-}
-console.log(array1);
+// for (let i = 0; i < psevdoArray.length; i++) {
+//   array1.push(psevdoArray[i])
+// }
+// console.log(array1);
 
-// Домашка №34(2)
+// // Домашка №34(2)
 
-let array2 = ["first", "second", "third"];
+// let array2 = ["first", "second", "third"];
 
-for (let i = 0; i < array2.length; i++) {
-  console.log(Array.from(array2[i]));
-}
+// for (let i = 0; i < array2.length; i++) {
+//   console.log(Array.from(array2[i]));
+// }
 // ========================================
+
+
+
+
+
+
+
+// ========================================
+// Домашка №35
+
+// const arr1 = {
+//   name: 'Ulanbek',
+//   surname: 'Moidunov',
+//   kod: '1111',
+//   hobby: obj1 = {
+//     1: "football",
+//     2: "coding"
+//   }
+// }
+
+
+let myName = prompt("Введите имя: ", "");
+let mySurname = prompt("Введите фамилию: ", "");
+let myCode = prompt("Введите код: ", "");
+
+if (myName == "Ulanbek" && mySurname == "Moidunov" && myCode == "1111") {
+  function myFunc(myObj) {
+    const newObj = {};
+    let key;
+    for (key in myObj) {
+      newObj[key] = myObj[key];
+    }
+    return newObj;
+
+  }
+  const oldObj = {
+    name: 'Ulanbek',
+    surname: 'Moidunov',
+    kod: '1111',
+    hobby: {
+      1: "football",
+      2: "coding"
+    }
+  }
+  // console.log(oldObj);
+  console.log(myFunc(oldObj));
+
+} else {
+  alert(" Ошибочка вышла!!!!(");
+}
+
+
+
+
+
+
+
+
+// ========================================
+
+// Домашка №36
+// let salary = {
+//   almaz: 1200,
+//   adilet: 1300,
+//   nursultan: 3000,
+// };
+// let bonus = {
+//   almaz: 400,
+//   adilet: 300,
+//   nursultan: 200,
+// };
+
+// var sum = {}
+// Object.keys(salary).forEach(function (a) {
+//   sum[a] = salary[a] + bonus[a]
+
+// })
+// console.log(sum)
+
+
+
+
+
+
 
 
 
