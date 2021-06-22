@@ -219,74 +219,56 @@
 // ========================================
 // Домашка №35
 
-// const arr1 = {
-//   name: 'Ulanbek',
-//   surname: 'Moidunov',
-//   kod: '1111',
-//   hobby: obj1 = {
-//     1: "football",
-//     2: "coding"
+// let myName = prompt("Введите имя: ", "");
+// let mySurname = prompt("Введите фамилию: ", "");
+// let myCode = prompt("Введите код: ", "");
+
+// if (myName == "Ulanbek" && mySurname == "Moidunov" && myCode == "1111") {
+//   function myFunc(myObj) {
+//     const newObj = {};
+//     let key;
+//     for (key in myObj) {
+//       newObj[key] = myObj[key];
+//     }
+//     return newObj;
+
 //   }
+//   const oldObj = {
+//     name: 'Ulanbek',
+//     surname: 'Moidunov',
+//     kod: '1111',
+//     hobby: {
+//       1: "football",
+//       2: "coding"
+//     }
+//   }
+//   // console.log(oldObj);
+//   console.log(myFunc(oldObj));
+
+// } else {
+//   alert(" Ошибочка вышла!!!!(");
 // }
-
-
-let myName = prompt("Введите имя: ", "");
-let mySurname = prompt("Введите фамилию: ", "");
-let myCode = prompt("Введите код: ", "");
-
-if (myName == "Ulanbek" && mySurname == "Moidunov" && myCode == "1111") {
-  function myFunc(myObj) {
-    const newObj = {};
-    let key;
-    for (key in myObj) {
-      newObj[key] = myObj[key];
-    }
-    return newObj;
-
-  }
-  const oldObj = {
-    name: 'Ulanbek',
-    surname: 'Moidunov',
-    kod: '1111',
-    hobby: {
-      1: "football",
-      2: "coding"
-    }
-  }
-  // console.log(oldObj);
-  console.log(myFunc(oldObj));
-
-} else {
-  alert(" Ошибочка вышла!!!!(");
-}
-
-
-
-
-
-
-
 
 // ========================================
 
 // Домашка №36
-// let salary = {
-//   almaz: 1200,
-//   adilet: 1300,
-//   nursultan: 3000,
-// };
-// let bonus = {
-//   almaz: 400,
-//   adilet: 300,
-//   nursultan: 200,
-// };
+let salary = {
+  almaz: 1200,
+  adilet: 1300,
+  nursultan: 3000,
+};
+let bonus = {
+  almaz: 400,
+  adilet: 300,
+  nursultan: 200,
+};
 
-// var sum = {}
-// Object.keys(salary).forEach(function (a) {
-//   sum[a] = salary[a] + bonus[a]
+var sum = {}
+Object.keys(salary).forEach(function (a) {
+  sum[a] = salary[a] + bonus[a]
 
-// })
-// console.log(sum)
+})
+console.log(sum)
 
 
 
