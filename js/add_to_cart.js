@@ -33,7 +33,7 @@ let add_to_card = function (e) {
                                   <span>\
                                   '+ currency[0].innerText + '\
                                   </span>\
-                                  <span>\
+                                  <span class="price_li">\
                                   '+ price[0].innerText + '\
                                   </span>\
                                 </span>\
@@ -56,13 +56,59 @@ let add_to_card = function (e) {
   let remove_to_card = function (evt) {
     evt.preventDefault();
     this.parentNode.remove();
+    // Вызов функции Определения обшей цены
+    totalPrice();
+    // Вызов функции Определения количества карточек в корзине
+    quantityCards();
   }
 
   for (let i = 0; i < remove_card.length; i++) {
     remove_card[i].addEventListener('click', remove_to_card, false);
   }
+
+  // Вызов функции Определения обшей цены
+  totalPrice();
+  // Вызов функции Определения количества карточек в корзине
+  quantityCards();
+
 }
 
 for (let i = 0; i < btn__basket.length; i++) {
   btn__basket[i].addEventListener('click', add_to_card, false);
+}
+
+
+
+// Определение обшей цены
+function totalPrice() {
+
+  let countAllPrice = document.querySelectorAll('.price_li');
+  let total_price = 0;
+
+  for (let i = 0; i < countAllPrice.length; i++) {
+    total_price = total_price + (+countAllPrice[i].textContent);
+  }
+
+  let basket_price = document.querySelectorAll('.basket_price');
+  let dropmenu_price = document.querySelectorAll('.dropmenu_price');
+
+  basket_price[0].innerHTML = total_price;
+  dropmenu_price[0].innerHTML = total_price;
+
+}
+
+// Определение количества карточек в корзине
+
+function quantityCards() {
+
+  let all_li = document.querySelectorAll('.dropmenu__elements ul > li');
+  let all_cards = 0;
+
+  for (let i = 0; i < all_li.length; i++) {
+    all_cards = all_li.length;
+  }
+
+  let quantity_cards = document.querySelectorAll('.quantity_cards');
+  quantity_cards[0].innerHTML = all_cards;
+
 }
