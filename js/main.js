@@ -274,28 +274,28 @@
 
 // Домашка №38
 
-function num_1(num_user) {
+// function num_1(num_user) {
 
-  if (typeof num_user === "number") {
+//   if (typeof num_user === "number") {
 
-    let num_16 = num_user.toString(16); // Шестнадцатеричный  код
-    let num_8 = num_user.toString(8); // Восьмеричный  код
-    let num_2 = num_user.toString(2); // Двоичный код
+//     let num_16 = num_user.toString(16); // Шестнадцатеричный  код
+//     let num_8 = num_user.toString(8); // Восьмеричный  код
+//     let num_2 = num_user.toString(2); // Двоичный код
 
-    console.log(num_16);
-    console.log(num_8);
-    console.log(num_2);
+//     console.log(num_16);
+//     console.log(num_8);
+//     console.log(num_2);
 
 
-  } else {
-    console.log('Введенные вами данные, не число');
-  }
-}
+//   } else {
+//     console.log('Введенные вами данные, не число');
+//   }
+// }
 
-// num_1(prompt('Введите число: ', ''));
-num_1(13);
-num_1(55);
-num_1(16);
+// // num_1(prompt('Введите число: ', ''));
+// num_1(13);
+// num_1(55);
+// num_1(16);
 
 // ========================================
 
