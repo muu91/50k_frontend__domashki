@@ -1,4 +1,7 @@
+// ====================
 // Корзина
+// ====================
+
 var basket = document.querySelector('#basket');
 var basketDropmenu = document.querySelector('.basket__dropmenu');
 // console.log(basketDropmenu);
@@ -107,6 +110,7 @@ function quantityCards() {
   for (let i = 0; i < all_li.length; i++) {
     all_cards = all_li.length;
   }
+
 
   let quantity_cards = document.querySelectorAll('.quantity_cards');
   quantity_cards[0].innerHTML = all_cards;
