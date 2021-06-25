@@ -210,12 +210,6 @@
 // }
 // ========================================
 
-
-
-
-
-
-
 // ========================================
 // Домашка №35
 
@@ -296,6 +290,19 @@
 // num_1(13);
 // num_1(55);
 // num_1(16);
+
+// ========================================
+
+// Домашка №42
+
+let headerSubmenu = document.querySelectorAll('.header__submenu ul > li > a');
+console.log(headerSubmenu);
+
+headerSubmenu.forEach((e) => {
+  e.onclick = function () {
+    this.remove();
+  }
+});
 
 // ========================================
 
