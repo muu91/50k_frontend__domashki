@@ -295,16 +295,44 @@
 
 // Домашка №42
 
-let headerSubmenu = document.querySelectorAll('.header__submenu ul > li > a');
-console.log(headerSubmenu);
+// let headerSubmenu = document.querySelectorAll('.header__submenu ul > li > a');
+// console.log(headerSubmenu);
 
-headerSubmenu.forEach((e) => {
-  e.onclick = function () {
-    this.remove();
-  }
+// headerSubmenu.forEach((e) => {
+//   e.onclick = function () {
+//     this.remove();
+//   }
+// });
+
+// ========================================
+// Домашка №43
+let body = document.querySelector('body');
+let btn_red = document.querySelector('.red');
+let btn_yellow = document.querySelector('.yellow');
+let btn_green = document.querySelector('.green');
+let btn_default = document.querySelector('.default');
+
+body.style.transition = '1s';
+
+btn_red.addEventListener('click', function (e) {
+  e.preventDefault();
+  body.style.backgroundColor = 'red';
+});
+btn_yellow.addEventListener('click', function (e) {
+  e.preventDefault();
+  body.style.backgroundColor = 'yellow';
+});
+btn_green.addEventListener('click', function (e) {
+  e.preventDefault();
+  body.style.backgroundColor = 'green';
+});
+btn_default.addEventListener('click', function (e) {
+  e.preventDefault();
+  body.style.backgroundColor = 'transparent';
 });
 
 // ========================================
+
 
 
 
